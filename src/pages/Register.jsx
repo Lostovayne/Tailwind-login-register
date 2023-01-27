@@ -30,7 +30,7 @@ const Register = () => {
 
     try {
       await signup(user.email, user.password);
-      navigate('/');
+      navigate('/login');
     } catch (error) {
       setError(error.message);
     }
