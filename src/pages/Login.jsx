@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { useAuth } from '../context/authContext';
 import { Link, useNavigate } from 'react-router-dom';
 
+
+
+
 const Login = () => {
   const [user, setUser] = useState({
     email: '',
@@ -16,7 +19,7 @@ const Login = () => {
 
   //contexto
 
-  const { login } = useAuth();
+  const { login} = useAuth();
 
   const handleChange = ({ target: { name, value } }) => {
     setUser({ ...user, [name]: value });

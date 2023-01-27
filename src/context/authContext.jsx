@@ -24,6 +24,10 @@ function AuthProvider({ children }) {
 
   //poara comprobar estado del usuario
   const [user, setUser] = useState(null);
+  
+  //para esperar que firebase cargue
+  const [loading, setLoading] = useState(true);
+
 
   // logear usuarios
 
@@ -38,11 +42,13 @@ function AuthProvider({ children }) {
   useEffect(() => {
     onAuthStateChanged(auth, (currenUser) => {
       setUser(currenUser);
+      setLoading(false);
+
     });
   }, []);
 
   return (
-    <authContext.Provider value={{ signup, login, user, logout }}>
+    <authContext.Provider value={{ signup, login, user, logout , loading }}>
       {children}
     </authContext.Provider>
   );

@@ -8,21 +8,25 @@ import LayoutPrivate from './layout/LayoutPrivate';
 import Users from './pages/Users';
 
 function App() {
+  const { user, loading } = useAuth();
+
+  if (loading) return <h1>Loading...</h1>;
+
+  console.log(user);
+
   return (
     <div className='fondo h-screen w-full flex justify-center items-center font-poppins'>
-      <AuthProvider>
-        <Routes>
-          {/* Rutas protegidas */}
+      <Routes>
+        {/* Rutas protegidas */}
 
-          <Route path='/' element={<LayoutPrivate />}>
-            <Route index element={<Home />} />
-            <Route path='/users' element={<Users />} />
-          </Route>
+        <Route path='/' element={<LayoutPrivate />}>
+          <Route index element={<Home />} />
+          <Route path='/users' element={<Users />} />
+        </Route>
 
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-        </Routes>
-      </AuthProvider>
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+      </Routes>
     </div>
   );
 }
