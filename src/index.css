@@ -12,3 +12,10 @@
 
     
 }
+
+::-webkit-scrollbar{
+    
+    display: none;
+    
+    
+}
