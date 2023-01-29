@@ -51,7 +51,7 @@ const Home = () => {
       </section>
 
       {/* seccion2 */}
-      <section className='col-span-1  p-4 border-l '>
+      <section className='col-span-1  px-4 pt-[6rem] border-l '>
         <img src={photo6} alt='' className='rounded-xl' />
         <h3 className='font-medium text-xl text-gray-700 text-center my-3'>
           Monstera Deliciosa Variegeta

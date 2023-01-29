@@ -1,12 +1,36 @@
 import perfil from '../assets/perfil.webp';
 import { IoNotificationsOutline } from 'react-icons/io5';
+import DropdownItem from './DropdownItem';
+import {
+  IoPersonOutline,
+  IoSettingsOutline,
+  IoDocumentOutline,
+  IoMailUnreadOutline,
+  IoLogOutOutline
+} from 'react-icons/io5';
+import { useAuth } from '../context/authContext';
+import { useState } from 'react';
 
 const Header = () => {
+  const className = 'text-xl group-hover:text-white';
+
+  const { logout } = useAuth();
+
+  //cerrar sesion
+
+  const handleclick = () => {
+    logout();
+  };
+
+  const [open, setOpen] = useState(false);
+
   return (
     <header className='bg-white w-full py-5 flex items-center justify-between px-8 shadow relative '>
       <span className='text-xl font-semibold text-gray-800 '>
         DeusInventory
       </span>
+
+      {/* CONTENEDOR DROPDOWN */}
 
       <div className='flex items-center gap-6  '>
         <IoNotificationsOutline className='text-xl text-gray-600' />
@@ -17,11 +41,46 @@ const Header = () => {
             className='h-10 w-10 rounded-full p-[1px] border'
           />
 
-          <div className='flex flex-col cursor-pointer '>
-            <span className='font-medium text-gray-900'>Deus lo vult</span>
-            <span className='text-sm text-gray-300 font-medium'>
-              deus@lovult.com
-            </span>
+          <div className='contenedor-drop relative'>
+            <div
+              className='flex flex-col cursor-pointer  '
+              onClick={() => {
+                setOpen(!open);
+              }}>
+              <span className='font-medium text-gray-900'>Deus lo vult</span>
+              <span className='text-sm text-gray-300 font-medium'>
+                deus@lovult.com
+              </span>
+            </div>
+
+            <div
+              className={`dropdown shadow rounded w-52 py-4 bg-white absolute z-10 transition-all  right-0  ${
+                open
+                  ? 'top-[4.2rem] opacity-100 visible transition delay-150  duration-150 ease-in-out  '
+                  : ' opacity-0 -translate-y-2 invisible transition-all  '
+              }`}>
+              <DropdownItem texto={'My Profile'}>
+                <IoPersonOutline className={className} />
+              </DropdownItem>
+
+              <DropdownItem texto={'Edit Profile'}>
+                <IoDocumentOutline className={className} />
+              </DropdownItem>
+
+              <DropdownItem texto={'Inbox'}>
+                <IoMailUnreadOutline className={className} />
+              </DropdownItem>
+
+              <DropdownItem texto={'Settings'}>
+                <IoSettingsOutline className={className} />
+              </DropdownItem>
+
+              <button onClick={handleclick} className='w-full'>
+                <DropdownItem texto={'Logout'}>
+                  <IoLogOutOutline className={className} />
+                </DropdownItem>
+              </button>
+            </div>
           </div>
         </div>
       </div>

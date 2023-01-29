@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {
   IoBagHandleOutline,
-  IoBarChartOutline,
+  IoCheckboxOutline,
   IoAddCircleOutline,
   IoChatboxEllipsesOutline,
   IoImagesOutline,
@@ -14,7 +14,7 @@ import {
 const Aside = () => {
   return (
     <aside className='h-full bg-white w-64 py-12 pl-5 px-3 '>
-      <ul className='flex flex-col gap-5 text-gray-600 items-center  '>
+      <ul className='flex flex-col  gap-5 text-gray-600 items-center  '>
         <NavLink
           to='/'
           className='flex gap-3 items-center py-3 rounded-lg bg-blue-400 text-white   px-8  w-full  mx-auto '>
@@ -25,8 +25,8 @@ const Aside = () => {
         <NavLink
           to='/'
           className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white   px-8  w-full  mx-auto '>
-          <IoBarChartOutline className='text-xl ' />
-          <span>Analitics</span>
+          <IoCheckboxOutline className='text-xl ' />
+          <span>Tasks</span>
         </NavLink>
 
         <NavLink
@@ -65,7 +65,7 @@ const Aside = () => {
         </NavLink>
 
         <NavLink
-          to='/'
+          to='/settings'
           className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white   px-8  w-full  mx-auto '>
           <IoSettingsOutline className='text-xl ' />
           <span>Settings</span>

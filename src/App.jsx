@@ -6,6 +6,7 @@ import Home from './pages/Home';
 // import ProtectedRoutes from './pages/ProtectedRoutes';
 import LayoutPrivate from './layout/LayoutPrivate';
 import Users from './pages/Users';
+import Settings from './pages/Settings';
 
 function App() {
   const { user, loading } = useAuth();
@@ -22,6 +23,7 @@ function App() {
         <Route path='/' element={<LayoutPrivate />}>
           <Route index element={<Home />} />
           <Route path='/users' element={<Users />} />
+          <Route path='/settings' element={<Settings />} />
         </Route>
 
         <Route path='/login' element={<Login />} />

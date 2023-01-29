@@ -11,8 +11,8 @@ const LayoutPrivate = () => {
   return (
     <main className='h-screen w-full flex flex-col '>
       <Header />
-      <section className=' flex '>
-        <Aside  />
+      <section className=' flex flex-grow '>
+        <Aside />
         <Outlet />
       </section>
     </main>
