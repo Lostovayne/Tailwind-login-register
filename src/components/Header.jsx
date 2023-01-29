@@ -1,6 +1,12 @@
 import perfil from '../assets/perfil.webp';
 import { IoNotificationsOutline } from 'react-icons/io5';
 import DropdownItem from './DropdownItem';
+
+
+
+
+import logo from "../assets/logo.png"
+
 import {
   IoPersonOutline,
   IoSettingsOutline,
@@ -26,9 +32,11 @@ const Header = () => {
 
   return (
     <header className='bg-white w-full py-5 flex items-center justify-between px-8 shadow relative '>
-      <span className='text-xl font-semibold text-gray-800 '>
-        DeusInventory
-      </span>
+      <div className='flex items-center cursor-pointer'>
+        <img src={logo} alt='' className='h-12 ' />
+        <span className='font-bold text-[#905f3e] text-2xl'>Planti</span>
+        <span className='text-[#6fba2a] font-bold text-2xl'>Deus</span>
+      </div>
 
       {/* CONTENEDOR DROPDOWN */}
 
@@ -48,7 +56,7 @@ const Header = () => {
                 setOpen(!open);
               }}>
               <span className='font-medium text-gray-900'>Deus lo vult</span>
-              <span className='text-sm text-gray-300 font-medium'>
+              <span className='text-sm text-gray-400 font-medium'>
                 deus@lovult.com
               </span>
             </div>
