@@ -13,7 +13,7 @@ import {
 
 const Aside = () => {
   return (
-    <aside className='h-full bg-white w-64 py-12 pl-5 px-3 '>
+    <aside className='h-full bg-white w-[14rem] py-12 pl-5 px-3 '>
       <ul className='flex flex-col  gap-5 text-gray-600 items-center  '>
         <NavLink
           to='/'
@@ -51,10 +51,10 @@ const Aside = () => {
         </NavLink>
 
         <NavLink
-          to='/'
+          to='/messages'
           className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8 w-full mx-auto '>
           <IoChatboxEllipsesOutline className='text-xl ' />
-          <span>Comments</span>
+          <span>Messages</span>
         </NavLink>
 
         <NavLink

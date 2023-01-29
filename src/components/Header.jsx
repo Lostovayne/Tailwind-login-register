@@ -40,8 +40,8 @@ const Header = () => {
 
       {/* CONTENEDOR DROPDOWN */}
 
-      <div className='flex items-center gap-6  '>
-        <IoNotificationsOutline className='text-xl text-gray-600' />
+      <div className='flex items-center gap-4  '>
+        <IoNotificationsOutline className='text-2xl text-gray-600' />
         <div className='flex items-center gap-3'>
           <img
             src={perfil}
@@ -56,7 +56,7 @@ const Header = () => {
                 setOpen(!open);
               }}>
               <span className='font-medium text-gray-900'>Deus lo vult</span>
-              <span className='text-sm text-gray-400 font-medium'>
+              <span className='text-sm text-gray-600 font-medium'>
                 deus@lovult.com
               </span>
             </div>

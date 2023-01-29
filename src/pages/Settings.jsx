@@ -17,11 +17,11 @@ const Settings = () => {
           profile
         </p>
 
-        <div className='bg-slate-50 w-2/3 h-52 py-2 mx-auto rounded-xl my-6 flex flex-col items-center gap-3 justify-evenly '>
+        <div className='bg-slate-50 w-2/3 h-[14.5rem] py-2 mx-auto rounded-xl my-5 flex flex-col items-center gap-3 justify-evenly '>
           <img
             src={perfileditable}
             alt=''
-            className='h-24 w-24 object-cover rounded-full bg-white p-1'
+            className='h-28 w-28 object-cover rounded-full bg-white p-1'
           />
           <span className='text-sm text-gray-600'>
             image must be 256x256 - max 2mb
@@ -47,7 +47,7 @@ const Settings = () => {
               type='text'
               id='name'
               placeholder='Sasha '
-              className='placeholder:text-gray-500 outline-none py-2 px-4  rounded-md border'
+              className='placeholder:text-gray-400 placeholder:text-sm outline-none py-2 px-4  rounded-md border'
             />
           </div>
 
@@ -59,7 +59,7 @@ const Settings = () => {
               type='text'
               id='name'
               placeholder='Gray '
-              className=' placeholder:text-gray-500 outline-none py-2 px-4 rounded-md border'
+              className=' placeholder:text-gray-400 placeholder:text-sm  outline-none py-2 px-4 rounded-md border'
             />
           </div>
 
@@ -71,7 +71,7 @@ const Settings = () => {
               type='email'
               id='name'
               placeholder='Sasha-Gray@gmail.com'
-              className=' placeholder:text-gray-500 outline-none py-2 px-4 rounded-md border'
+              className=' placeholder:text-gray-400 placeholder:text-sm outline-none py-2 px-4 rounded-md border'
             />
           </div>
 
@@ -83,7 +83,7 @@ const Settings = () => {
               type='text'
               id='name'
               placeholder='+523 259856859'
-              className=' placeholder:text-gray-500 outline-none py-2 px-4 rounded-md border'
+              className=' placeholder:text-gray-400 placeholder:text-sm  outline-none py-2 px-4 rounded-md border'
             />
           </div>
 
@@ -95,12 +95,12 @@ const Settings = () => {
               type='text'
               id='name'
               placeholder='https://socialNetwork.com'
-              className=' placeholder:text-gray-500 outline-none py-2 px-4 rounded-md border'
+              className=' placeholder:text-gray-400 placeholder:text-sm  outline-none py-2 px-4 rounded-md border'
             />
           </div>
 
           <textarea
-            className='appearance-none border w-full h-32 resize-none outline-none p-2  placeholder:text-gray-500 placeholder: rounded-md'
+            className='appearance-none border w-full h-32 resize-none outline-none p-2  placeholder:text-gray-400 placeholder: rounded-md'
             placeholder='Enter text here...'></textarea>
         </form>
       </section>
@@ -118,21 +118,32 @@ const Settings = () => {
             className='h-36 w-36 object-cover rounded-full bg-white p-1 mx-auto -translate-y-20'
           />
         </div>
-        <div className='text-center -translate-y-16 flex flex-col gap-1'>
+        <div className='text-center -translate-y-16 flex flex-col gap-3'>
           <span className='font-medium text-xl'>Rick Soleman Levinski</span>
-          <span className='text-gray-600'>programmer</span>
+          <span className='text-gray-600 font-medium'>
+            Senior UX/UI Designer
+          </span>
           <div className='flex justify-center gap-4 mt-2'>
             <img src={logo2} alt='' className='h-10' />
             <img src={logo3} alt='' className='h-10' />
             <img src={logo1} alt='' className='h-10' />
           </div>
 
-          <p className='my-3'>
+          <p className='my-3 w-[85%] mx-auto'>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
             doloribus at recusandae quo veritatis, quaerat ut est iusto veniam
             assumenda quod repellat nemo inventore similique accusamus cum
             mollitia dolor porro!
           </p>
+
+          <div className='flex mt-6 justify-evenly'>
+            <button className='bg-[#ff5f96] py-2 px-6 text-white rounded-md shadow w-32 '>
+              Proyects
+            </button>
+            <button className='bg-white py-2 px-6 text-gray-800 border rounded-md w-32 '>
+              Message
+            </button>
+          </div>
         </div>
       </section>
     </div>

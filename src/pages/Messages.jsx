@@ -1,4 +1,4 @@
-const Users = () => {
+const Messages = () => {
   return (
     <div className='grid grid-cols-4 w-full'>
       <section className='bg-slate-50 col-span-1 border-r '></section>
@@ -8,4 +8,4 @@ const Users = () => {
   );
 };
 
-export default Users;
+export default Messages;

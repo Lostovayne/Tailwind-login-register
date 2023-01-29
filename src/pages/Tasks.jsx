@@ -1,4 +1,5 @@
-const Users = () => {
+
+const Tasks = () => {
   return (
     <div className='grid grid-cols-4 w-full'>
       <section className='bg-slate-50 col-span-1 border-r '></section>
@@ -6,6 +7,6 @@ const Users = () => {
       <section className='bg-slate-50 col-span-1 border-l '></section>
     </div>
   );
-};
+}
 
-export default Users;
+export default Tasks
