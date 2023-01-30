@@ -4,7 +4,7 @@ const Card = ({ nombre, photo }) => {
   return (
     <div className='border  p-5 rounded-2xl bg-white text-center '>
       <img src={photo} alt='' className='h-72 w-60 object-cover rounded-xl' />
-      <h3>{nombre}</h3>
+      <h3 className='font-medium text-gray-700 py-2'>{nombre}</h3>
 
       <div className='flex items-center justify-between '>
         <div className='flex flex-col items-baseline '>

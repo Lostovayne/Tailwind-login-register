@@ -8,6 +8,7 @@ import LayoutPrivate from './layout/LayoutPrivate';
 import Users from './pages/Users';
 import Settings from './pages/Settings';
 import Messages from './pages/Messages';
+import Components from './pages/Components';
 
 function App() {
   const { user, loading } = useAuth();
@@ -26,6 +27,7 @@ function App() {
           <Route path='/users' element={<Users />} />
           <Route path='/settings' element={<Settings />} />
           <Route path='/messages' element={ <Messages /> }  />
+          <Route  path='/components' element= {<Components />}  />
         </Route>
 
         <Route path='/login' element={<Login />} />

@@ -17,56 +17,88 @@ const Aside = () => {
       <ul className='flex flex-col  gap-5 text-gray-600 items-center  '>
         <NavLink
           to='/'
-          className='flex gap-3 items-center py-3 rounded-lg bg-blue-400 text-white   px-8  w-full  mx-auto '>
+          className={({ isActive }) =>
+            isActive
+              ? 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white bg-blue-400 text-white  px-8  w-full  mx-auto '
+              : 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '
+          }>
           <IoBagHandleOutline className='text-xl ' />
           <span>Store</span>
         </NavLink>
 
         <NavLink
-          to='/'
-          className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white   px-8  w-full  mx-auto '>
+          to='/tasks'
+          className={({ isActive }) =>
+            isActive
+              ? 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white bg-blue-400 text-white  px-8  w-full  mx-auto '
+              : 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '
+          }>
           <IoCheckboxOutline className='text-xl ' />
           <span>Tasks</span>
         </NavLink>
 
         <NavLink
-          to='/'
-          className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '>
+          to='/post'
+          className={({ isActive }) =>
+            isActive
+              ? 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white bg-blue-400 text-white  px-8  w-full  mx-auto '
+              : 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '
+          }>
           <IoAddCircleOutline className='text-xl ' />
           <span>Post</span>
         </NavLink>
 
         <NavLink
-          to='/'
-          className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '>
+          to='/components'
+          className={({ isActive }) =>
+            isActive
+              ? 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white bg-blue-400 text-white  px-8  w-full  mx-auto '
+              : 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '
+          }>
           <IoLayersOutline className='text-xl ' />
-          <span>Pages</span>
+          <span>Proyects</span>
         </NavLink>
 
         <NavLink
-          to='/'
-          className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '>
+          to='/media'
+          className={({ isActive }) =>
+            isActive
+              ? 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white bg-blue-400 text-white  px-8  w-full  mx-auto '
+              : 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '
+          }>
           <IoImagesOutline className='text-xl ' />
           <span>Media</span>
         </NavLink>
 
         <NavLink
           to='/messages'
-          className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8 w-full mx-auto '>
+          className={({ isActive }) =>
+            isActive
+              ? 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white bg-blue-400 text-white  px-8  w-full  mx-auto '
+              : 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '
+          }>
           <IoChatboxEllipsesOutline className='text-xl ' />
           <span>Messages</span>
         </NavLink>
 
         <NavLink
           to='/users'
-          className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '>
+          className={({ isActive }) =>
+            isActive
+              ? 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white bg-blue-400 text-white  px-8  w-full  mx-auto '
+              : 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '
+          }>
           <IoPersonOutline className='text-xl  ' />
           <span>Users</span>
         </NavLink>
 
         <NavLink
           to='/settings'
-          className='flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white   px-8  w-full  mx-auto '>
+          className={({ isActive }) =>
+            isActive
+              ? 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white bg-blue-400 text-white  px-8  w-full  mx-auto '
+              : 'flex gap-3 items-center py-3 rounded-lg hover:bg-blue-400 hover:text-white  px-8  w-full  mx-auto '
+          }>
           <IoSettingsOutline className='text-xl ' />
           <span>Settings</span>
         </NavLink>

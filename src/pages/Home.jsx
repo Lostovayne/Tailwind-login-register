@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <section className=' h-full rounded-md px-4 bg-white  grid grid-cols-5  '>
       {/* seccion1 */}
-      <section className=' col-span-4 pt-5 flex flex-col  '>
+      <section className=' col-span-5 pt-5 flex flex-col  '>
         <div className='w-1/3 mx-auto flex items-center bg-slate-50/70 rounded-xl px-3 '>
           <IoSearchOutline className='text-xl text-gray-500' />
           <input
@@ -50,31 +50,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* seccion2 */}
-      <section className='col-span-1  px-4 pt-[6rem] border-l '>
-        <img src={photo6} alt='' className='rounded-xl' />
-        <h3 className='font-medium text-xl text-gray-700 text-center my-3'>
-          Monstera Deliciosa Variegeta
-        </h3>
-        <p className='text-gray-600'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eum
-          rem, nemo pariatur, beatae, modi sint porro sequi ad nihil non. Nam,
-          quod. Nihil necessitatibus ipsa consequuntur ea, optio earum.
-        </p>
-        <span className='text-green-500'>Read More</span>
 
-        <div className='mt-4 flex items-center justify-between'>
-          <div className='p-3 bg-red-100 rounded-full '>
-            <IoHeart className='text-red-500 text-2xl ' />
-          </div>
-
-          <button className='text-white bg-green-500 py-3 px-5 rounded-xl transition-colors hover:bg-green-700 '>
-            <span>9.99</span>
-            <span> - </span>
-            <span> Add to Cart</span>
-          </button>
-        </div>
-      </section>
     </section>
   );
 };

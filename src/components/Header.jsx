@@ -9,10 +9,11 @@ import logo from "../assets/logo.png"
 
 import {
   IoPersonOutline,
-  IoSettingsOutline,
+  IoMoonOutline,
   IoDocumentOutline,
   IoMailUnreadOutline,
-  IoLogOutOutline
+  IoLogOutOutline,
+  IoHeartOutline
 } from 'react-icons/io5';
 import { useAuth } from '../context/authContext';
 import { useState } from 'react';
@@ -41,7 +42,8 @@ const Header = () => {
       {/* CONTENEDOR DROPDOWN */}
 
       <div className='flex items-center gap-4  '>
-        <IoNotificationsOutline className='text-2xl text-gray-600' />
+        <IoNotificationsOutline className='text-2xl text-gray-700 cursor-pointer ' />
+        <IoHeartOutline className='text-2xl text-gray-700 cursor-pointer ' />
         <div className='flex items-center gap-3'>
           <img
             src={perfil}
@@ -79,8 +81,8 @@ const Header = () => {
                 <IoMailUnreadOutline className={className} />
               </DropdownItem>
 
-              <DropdownItem texto={'Settings'}>
-                <IoSettingsOutline className={className} />
+              <DropdownItem texto={'Dark Mode'}>
+                <IoMoonOutline className={className} />
               </DropdownItem>
 
               <button onClick={handleclick} className='w-full'>
