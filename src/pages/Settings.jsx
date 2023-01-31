@@ -11,10 +11,12 @@ const Settings = () => {
   return (
     <div className='bg-slate-100 flex w-full p-8 gap-6  '>
       <section className='bg-white w-[75%] rounded-lg shadow shadow-slate-100 p-10'>
-        <h2 className='font-medium text-lg'>Profile settings</h2>
+        <h2 className='font-medium text-lg'>
+          Profile settings
+        </h2>
         <p className='text-gray-700 py-2'>
-          These are you personal details, they are visible on your public
-          profile
+          These are you personal details, they are visible
+          on your public profile
         </p>
 
         <div className='bg-slate-50 w-2/3 h-[14.5rem] py-2 mx-auto rounded-xl my-5 flex flex-col items-center gap-3 justify-evenly '>
@@ -28,19 +30,25 @@ const Settings = () => {
           </span>
           <div className='flex gap-5'>
             <button className='bg-white py-3 px-4 rounded-md shadow transition-colors text-green-500 hover:bg-green-500 hover:text-white flex items-center gap-2'>
-              <IoCloudUploadOutline className='text-xl' />
-              <span>Upload Image</span>
+              <IoCloudUploadOutline className='text-xl font-medium' />
+              <span className='text-sm font-medium'>
+                Upload Image
+              </span>
             </button>
             <button className='bg-white py-3 px-4 text-red-400 hover:bg-red-400 transition-colors hover:text-white font-medium rounded-md shadow flex items-center gap-2 '>
               <IoTrashOutline className='text-xl' />
-              <span>Delete Image</span>
+              <span className='text-sm font-medium'>
+                Delete Image
+              </span>
             </button>
           </div>
         </div>
 
         <form className='flex flex-wrap gap-3 gap-y-5  justify-between'>
           <div className='flex flex-col w-[48%] gap-1'>
-            <label htmlFor='name' className='text-gray-700 text-sm'>
+            <label
+              htmlFor='name'
+              className='text-gray-700 text-sm'>
               First Name
             </label>
             <input
@@ -52,7 +60,9 @@ const Settings = () => {
           </div>
 
           <div className='flex flex-col w-[48%] gap-1'>
-            <label htmlFor='name' className='text-gray-700 text-sm'>
+            <label
+              htmlFor='name'
+              className='text-gray-700 text-sm'>
               Last Name
             </label>
             <input
@@ -64,7 +74,9 @@ const Settings = () => {
           </div>
 
           <div className='flex flex-col w-[48%] gap-1'>
-            <label htmlFor='name' className='text-gray-700 text-sm'>
+            <label
+              htmlFor='name'
+              className='text-gray-700 text-sm'>
               Email
             </label>
             <input
@@ -76,7 +88,9 @@ const Settings = () => {
           </div>
 
           <div className='flex flex-col w-[48%] gap-1'>
-            <label htmlFor='name' className='text-gray-700 text-sm'>
+            <label
+              htmlFor='name'
+              className='text-gray-700 text-sm'>
               Contact Number
             </label>
             <input
@@ -88,7 +102,9 @@ const Settings = () => {
           </div>
 
           <div className='flex flex-col w-full gap-1'>
-            <label htmlFor='name' className='text-gray-700 text-sm'>
+            <label
+              htmlFor='name'
+              className='text-gray-700 text-sm'>
               Social network
             </label>
             <input
@@ -119,7 +135,9 @@ const Settings = () => {
           />
         </div>
         <div className='text-center -translate-y-16 flex flex-col gap-3'>
-          <span className='font-medium text-xl'>Rick Soleman Levinski</span>
+          <span className='font-medium text-xl'>
+            Rick Soleman Levinski
+          </span>
           <span className='text-gray-600 font-medium'>
             Senior UX/UI Designer
           </span>
@@ -130,10 +148,11 @@ const Settings = () => {
           </div>
 
           <p className='my-3 w-[85%] mx-auto'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
-            doloribus at recusandae quo veritatis, quaerat ut est iusto veniam
-            assumenda quod repellat nemo inventore similique accusamus cum
-            mollitia dolor porro!
+            Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Cupiditate doloribus at
+            recusandae quo veritatis, quaerat ut est iusto
+            veniam assumenda quod repellat nemo inventore
+            similique accusamus cum mollitia dolor porro!
           </p>
 
           <div className='flex mt-6 justify-evenly'>

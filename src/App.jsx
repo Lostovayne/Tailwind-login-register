@@ -9,6 +9,7 @@ import Users from './pages/Users';
 import Settings from './pages/Settings';
 import Messages from './pages/Messages';
 import Components from './pages/Components';
+import Tasks from './pages/Tasks';
 
 function App() {
   const { user, loading } = useAuth();
@@ -28,6 +29,7 @@ function App() {
           <Route path='/settings' element={<Settings />} />
           <Route path='/messages' element={ <Messages /> }  />
           <Route  path='/components' element= {<Components />}  />
+          <Route path='/tasks' element = {<Tasks />} />
         </Route>
 
         <Route path='/login' element={<Login />} />
